@@ -1,0 +1,42 @@
+1. The text based Machine Learning project that I have done is a text classification of spam and ham using Multinomial Naive Bayes algorithm and perceptron. 
+   a. The goal of this project is text classification using Naive Bayes approach using laplace smoothing. The project mainly focusses on implementation of Naive Bayes algorithm and perceptron without using any 
+      built-in packages and usage of stemmer and logscale. 
+   b. Below are the features of the project :
+       Input Features: Vocabulary built on using the dataset 
+       Algorithms: Naive Bayes and Linear Regression using Perceptrons.
+       Performance evaluators(metrics) : Accuracy 
+       loss : Categorical-cross entropy
+       Iterations: 20
+       Model Architectures: Naive Bayes and Perceptrons
+
+    c. Usage of Stemmer, creating the vocab from dataset , implementimg all the algorithms without using any built-in packages.
+    d. the weights and biases which are useful for classififying test data to be either spam or ham.
+    e. The accuracy is could be improved if there is more vocabulary present and also more train set.
+    
+    Preprocessing Techniques : Removing punctuations, split up sentences, use stemmer and encode.
+    Training : Naive Bayes and Perceptrons
+    Classifiers: Binary 
+    
+
+2.  The dataset should be classified to be in one of the categories among different categories. So Intent classification is done using Bidirectional LSTM which is one of the algorithms of Natural Language Processing.
+   Loading data: Data from json is loaded into a data structure (dictionary)
+   Pre-Processing Techniques: The data which is only under "train" is cleaned by removing punctuation and stemming the words and padding. Even the output is also padded with the randomly generated output classes.
+   To load the data into a model, the vocabulary is generated using the train and validation set and its indexes are set to 1. Then the arrays are converted to numpy arrays.
+   Even the output arrays are generated using the indexes by the array of 20 random generated classes.
+   Model: The model is an NLP model using Bidirectional LSTM , a layer of dense with "relu" activation , a layer of dropout and then a layer of dense with "softmax" activation.
+          Compile the model using Adams optimizers, categorical-crossentropy as loss parameter , accuracy as metric parameter and fit the model and save the weights to a model.h5 file.
+   Test: Load the model from h5 file and using that model we can give the input sentence which classifies the output sentence of any of the intent types.
+
+
+Github link:
+
+
+The task implementation is done till creating model and fitting it to training set and validating set.
+Next steps:
+    After the model parameters are saved, the test data is preprocessed and sent into the model and tested using model.predict .
+
+Challenges:  The accuracy can be improved by more data set and lengthy sentences which has more unique words. According to dataset the parameters are also changed such model should not be overfitted.
+   
+   
+       
+       
